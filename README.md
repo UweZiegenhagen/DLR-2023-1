@@ -28,14 +28,14 @@ likely cover the following topics during the course.
 * Creating extended bibliographies
 * Creating diagrams with TikZ
 * Combining LaTeX and computing engines, e.g. Python
+* Tables and how to tame them
 * ...
 
 From the participants I received the following topics, which I grouped into areas:
 
 ### Programming LaTeX
 
-* Designing my own layout (for beamer or other documents) 
-* What tools do I need to have?
+* Designing my own layout (for beamer or other documents) What tools do I need to have?
 * What do certain commands mean, like for instance "\makeatletter"?
 * Writing loops (like "if ... then ...")
 * In general writing more involved environments. Here I know only the basics like \renewcommand or \DeclareMathOperator.
@@ -43,11 +43,11 @@ From the participants I received the following topics, which I grouped into area
 
 ### Taming LaTeX
 
-* Forcing element (e.g. figure or footnote) positioning to be on specified page
 * Maybe a more basic question is: How to get rid of "overful \hbox"?
+* Is it actually possible to have absolutely no "underfull/overfull hbox" warnings? 
+* Forcing element (e.g. figure or footnote) positioning to be on specified page
 * Using git-latexdiff (instead of latexdiff [options] old.tex new.tex > diff.tex and having to manually download old.tex)
 * Strategy when managing a large project: what makes a 'good' LaTeX project? What are the dos-and-dont's (e.g. preamble in separate file, \input and \include, etc.) ?
-* Is it actually possible to have absolutely no "underfull/overfull hbox" warnings? 
 * Formatting footnotes to be positioned inside the running text at the bottom of the page (i.e. not below text but wrapped within text),
 * Space between header numbering and header text
 * Change between single column and multiple column style (e.g. abstract in single column, remaining content in twocolumn style)
@@ -62,7 +62,7 @@ From the participants I received the following topics, which I grouped into area
 ### Bibliographies
 
 * Custom reference and bibliography styles
-* bib styles for entries that aren’t yet published
+* bib styles for entries that arenâ€™t yet published
 * More on Bibliographies, e.g. in combination with EndNote
 
 ### Interactions 
@@ -71,8 +71,33 @@ From the participants I received the following topics, which I grouped into area
 
 
 
+## Agenda
+
+### Day 1
+
+* Introduce ourselves
+* Curriculum of this course
+* Feedback culture
+* Writing letters
+* Writing and maintaining your CV
+* Presentations with LaTeX - Introduction
+* Arara and Autohotkey
+
+### Day 2
+
+* Presentations with LaTeX - Styles
+
+* LaTeX and the rest of the world: Python, R, etc.
+* Floats 
+ 
+ 
+### Day 3
+
+* 
 
 
+### Day 4
 
 
-
+* Q & A session
+* The "Outer Rim" of LaTeX: What can be done outside the standard?
