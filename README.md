@@ -53,23 +53,21 @@ From the participants I received the following topics, which I grouped into area
 * Change between single column and multiple column style (e.g. abstract in single column, remaining content in twocolumn style)
 * Custom abstract (abstract header, indentation, size, etc.) 
 
-
 ### Document Types
 
-* Poster für eine wissenschaftliche Konferenz erstellen
-* Präsentationen erstellen (wo liegt hier der Vorteil zu PowerPoint?)
+* Create posters for conferences
+* Creating presentations, where is the advantage if compared to PowerPoint?
 
 
 ### Bibliographies
 
 * Custom reference and bibliography styles
 * bib styles for entries that aren’t yet published
-* An erweiterten Bibliotheken bin ich ebenfalls interessiert. Gerne auch in Kombination mit EndNote.
+* More on Bibliographies, e.g. in combination with EndNote
 
 ### Interactions 
 
-* Die Analysesoftware die ich verwende ist R. Es wäre super etwas über die Kombination von LaTeX und R zu lernen
-
+* I am using R for analyses, how can I combine R and LaTeX?
 
 
 
