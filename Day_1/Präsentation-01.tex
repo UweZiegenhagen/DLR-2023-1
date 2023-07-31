@@ -1,15 +1,33 @@
-%!TEX TS-program = Arara
-% arara: pdflatex: {shell: yes}
 \documentclass[12pt,ngerman]{beamer}
 
-\usepackage[]{blindtext}
-\usetheme{Warsaw}
-\usepackage[]{graphicx}
+\usepackage{blindtext}
+\usepackage{graphicx}
+
+\usepackage{xcolor}
+\definecolor{chamois}{RGB}{255,255,240}
+\definecolor{darkbrown}{RGB}{124,79,0}
 
 \author{Uwe Ziegenhagen}
 \title{Meine erste Präsentation}
 \subtitle{Untertitel}
 \institute{Köln}
+
+% Navigation unterdrücken
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamercolor{background canvas}{bg=chamois}
+\setbeamercolor{itemize item}{fg=brown}
+\setbeamercolor{itemize subitem}{fg=brown}
+\setbeamertemplate{itemize item}{\textbullet}
+\setbeamertemplate{itemize subitem}{\textsterling}
+
+\setbeamercolor{frametitle}{fg=darkbrown}
+\setbeamercolor{structure}{fg=darkbrown}
+\setbeamercolor{title}{fg=brown}
+\setbeamercolor{author}{fg=darkbrown}
+
+%\befehl[optional1,optional2=fsdf]{Pflichtparameter1}{Pflichtparameter2}{Pflichtparameter3}{}{}
+% \includegraphics[width=0.5\textwidth]{Katze.jpg}
 
 \begin{document}
 
@@ -34,6 +52,8 @@
 \transdissolve
 \frametitle{Warum Beamer cool ist!}
 
+\textcolor{red}{Ich bin roter Text}
+
 \begin{equation}
 a^2+b^2=c^2
 \end{equation}
@@ -56,6 +76,13 @@ a^2+b^2=c^2
 \item<1> ich 
 \item<1,3> bin
 \item<4> eine
+
+\begin{itemize}
+	\item a
+	\item b
+	\item c
+\end{itemize}
+
 \item<2-> längere
 \item<-3>Aufzählung
 \end{itemize}
