@@ -12,4 +12,17 @@
 
 \textbf{\blindtext[3]}
 
+\directlua{
+a = 5*2.5
+tex.print(a)
+}
+
 \end{document}
+
+* pdflatex kann nicht mit OpenType Fonts umgehen
+* OpenType = Systemschriften unter Win, Mac und Linux
+* OpenType => xelatex oder lualatex
+* lualatex moderner als xelatex
+* Vorteil: OpenType
+* Nachteil: Langsamer!
+* Vorteil: eingebaute Skriptsprache Lua
