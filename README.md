@@ -52,6 +52,8 @@ From the participants I received the following topics, which I grouped into area
 * Space between header numbering and header text
 * Change between single column and multiple column style (e.g. abstract in single column, remaining content in twocolumn style)
 * Custom abstract (abstract header, indentation, size, etc.) 
+* How does LaTeX know stuff?
+* Graphics in LaTeX
 
 ### Document Types
 
@@ -68,6 +70,7 @@ From the participants I received the following topics, which I grouped into area
 ### Interactions 
 
 * I am using R for analyses, how can I combine R and LaTeX?
+* SQL and LaTeX
 
 
 
@@ -75,29 +78,34 @@ From the participants I received the following topics, which I grouped into area
 
 ### Day 1
 
-* Introduce ourselves
-* Curriculum of this course
-* Feedback culture
-* Writing letters
-* Writing and maintaining your CV
-* Presentations with LaTeX - Introduction
-* Arara and Autohotkey
+* Introduce ourselves ✓
+* Curriculum of this course ✓
+* Feedback culture: Please provide feedback, you can interrupt me after each sentence. ✓
+* Leichter TeXen mit Arara and Autohotkey ✓
+* Presentations with LaTeX - Introduction ✓
+* Overfull hboxes
+* Using LuaLaTeX
+* git
+* Presentations with LaTeX - Design your own Styles
+* Writing letters and creating custom designs 
+
 
 ### Day 2
 
-* Presentations with LaTeX - Styles
-
-* LaTeX and the rest of the world: Python, R, etc.
+* Writing and maintaining your CV, conditional typesetting
 * Floats 
+* Graphics and Tables
+* Embedding Source Code
+* LaTeX and the rest of the world: Python, R, SQL/Python, etc.
  
  
 ### Day 3
 
-* 
+* Understanding LaTeX - fundamentals for advanced users
 
 
 ### Day 4
 
 
-* Q & A session
 * The "Outer Rim" of LaTeX: What can be done outside the standard?
+* Q & A session
