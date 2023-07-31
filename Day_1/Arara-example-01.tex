@@ -1,0 +1,36 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[]{blindtext}
+
+\begin{document}
+
+\tableofcontents
+
+\section{Einleitung}\label{sec:eins}
+
+\blindtext[5]
+
+\section{Hauptteil}
+
+\blindtext[5]
+
+\section{Ende}\label{sec:eins}
+
+\blindtext[5]
+
+\section{Anhang}
+
+\blindtext[5]
+
+
+
+\section{Anhang2}
+
+\blindtext[5]
+
+\ref{sec:eins}
+
+\end{document}
