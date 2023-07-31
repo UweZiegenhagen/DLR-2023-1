@@ -1,0 +1,26 @@
+%!TEX TS-program = Arara
+% arara: lualatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{babel}
+\usepackage{blindtext}
+\usepackage[T1]{fontenc}
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setsansfont[ItalicFont={Cambria Italic},BoldFont={Cambria Bold},BoldItalicFont={Cambria Bold Italic}]{Cambria}
+\setmainfont[ItalicFont={Calibri Italic},BoldFont={Calibri Bold},BoldItalicFont={Calibri Bold Italic}]{Calibri}
+\setmonofont[ItalicFont={Consolas Italic},BoldFont={Consolas Bold},BoldItalicFont={Consolas Bold Italic}]{Consolas}
+\setmathfont{Cambria Math}
+
+
+\begin{document}
+\section{sdfsdf}
+
+Oh liebes Kuschelmonster, danke für das Wecken heute früh um 5 Uhr.
+
+\[
+- \frac{p}{2} \pm \sqrt{ \left( \frac{p}{2}\right)^2 -q  }
+\]
+
+\end{document}
