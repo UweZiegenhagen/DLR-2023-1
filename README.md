@@ -91,9 +91,10 @@ From the participants I received the following topics, which I grouped into area
 ### Day 2
 
 * Writing letters and creating custom designs 
-* Writing and maintaining your CV, conditional typesetting
-* Matplotlib und Systemschriftarten
-* LaTeX-Pakete in Matplotlib: uselatex in Python
+* Conditional typesetting: if/then, looping
+* Writing and maintaining your CV
+* Matplotlib and system fonts
+* LaTeX-Package in Matplotlib: uselatex in Python
 * Floats, Graphics and Tables
 * Embedding Source Code
 * LaTeX and the rest of the world: Python, R, SQL/Python, etc.
