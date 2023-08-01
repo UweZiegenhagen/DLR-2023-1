@@ -5,10 +5,10 @@ Public materials for my Advanced LaTeX Course at the DLR
 
 ## Course Dates
 
-* 31.07.2023
-* 03.08.2023
-* 07.08.2023
-* 11.08.2023
+* Monday, 31.07.2023
+* Thursday, 03.08.2023
+* Monday, 07.08.2023
+* Friday, 11.08.2023
 
 Each date will consist of four hours, most likely from 10--12 and from 13-15.
 
@@ -83,26 +83,26 @@ From the participants I received the following topics, which I grouped into area
 * Feedback culture: Please provide feedback, you can interrupt me after each sentence. ✓
 * Leichter TeXen mit Arara and Autohotkey ✓
 * Presentations with LaTeX - Introduction ✓
-* Overfull hboxes
-* Using LuaLaTeX
-* git
-* Presentations with LaTeX - Design your own Styles
-* Writing letters and creating custom designs 
-
+* Overfull hboxes ✓ (UZ to check this) ✓
+* Using git ✓
+* Using LuaLaTeX ✓
+* Presentations with LaTeX - Design your own Styles ✓
 
 ### Day 2
 
+* Writing letters and creating custom designs 
 * Writing and maintaining your CV, conditional typesetting
-* Floats 
-* Graphics and Tables
+* Matplotlib und Systemschriftarten
+* LaTeX-Pakete in Matplotlib: uselatex in Python
+* Floats, Graphics and Tables
 * Embedding Source Code
 * LaTeX and the rest of the world: Python, R, SQL/Python, etc.
  
  
 ### Day 3
 
+* TikZ
 * Understanding LaTeX - fundamentals for advanced users
-
 
 ### Day 4
 
