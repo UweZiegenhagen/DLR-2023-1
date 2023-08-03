@@ -1,0 +1,32 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman,parskip=full]{scrartcl}
+
+\usepackage{amsmath}
+\usepackage[separate-uncertainty=true]{siunitx}
+
+\begin{document}
+
+\[ 10 m/s \] %böse, da falsch
+
+\SI{100(10)}{\kilo\meter/\mu\second} % \mu ist hier falsch
+
+\si{\kilo\meter/\micro\second} % \micro 
+
+\SI{284(10)}{\ampere}
+
+\num{12345648}
+
+\begin{equation}
+-\frac{p}{2} \pm \sqrt{ \left(\frac{p}{2}\right)^2 -q } \mathrm{\Omega Ich bin ein Text}
+\end{equation}
+
+\begin{equation}
+-\frac{p}{2} \pm \sqrt{ \left(\frac{p}{2}\right)^2 -q } \mbox{Ich bin ein Text}
+\end{equation}
+
+\begin{equation}
+-\frac{p}{2} \pm \sqrt{ \left(\frac{p}{2}\right)^2 -q } \text{Ich bin ein Text}
+\end{equation}
+
+\end{document}

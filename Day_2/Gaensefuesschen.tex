@@ -1,0 +1,21 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{babel}
+%\usepackage{csquotes}
+\usepackage[autostyle,german=guillemets]{csquotes}
+
+\begin{document}
+
+\glq Hallo Welt!\grq
+
+\glqq Hallo Welt!\grqq
+
+\enquote{Hallo Welt!}
+
+% autohotkey Definition für "en#"
+
+\enquote{Hallo, das \enquote{Hallo, das ist ein Text} ist ein Text}
+
+\end{document}

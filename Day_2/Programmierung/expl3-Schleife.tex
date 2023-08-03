@@ -1,0 +1,30 @@
+% Quelle https://texwelt.de/fragen/17316/for-schleifen-mit-expl3
+
+% Siehe http://ftp.lyx.org/pub/tex-archive/macros/latex/contrib/l3kernel/expl3.pdf
+
+\documentclass{article}
+\usepackage{expl3}
+\usepackage{xparse}
+
+\ExplSyntaxOn
+\cs_new:Npn \zahlen_ausgeben:n #1 {#1}
+
+\cs_new:Npn \zahlen_vorwaerts:n #1
+  { \int_step_function:nnnN {1} {1} {#1} \zahlen_ausgeben:n }
+
+\cs_new:Npn \zahlen_rueckwaerts:n #1
+  { \int_step_function:nnnN {#1} {-1} {1} \zahlen_ausgeben:n }
+
+\NewDocumentCommand \Vorwaerts {m}
+  { \zahlen_vorwaerts:n {#1} }
+
+\NewDocumentCommand \Rueckwaerts {m}
+  { \zahlen_rueckwaerts:n {#1} }
+\ExplSyntaxOff
+
+\begin{document}
+
+\Vorwaerts{5} \par
+\Rueckwaerts{5}
+
+\end{document}
