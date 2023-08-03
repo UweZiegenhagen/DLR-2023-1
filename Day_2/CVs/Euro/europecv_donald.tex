@@ -5,17 +5,19 @@
 
 % https://github.com/latex3/latex2e/issues/833
 \usepackage{hyperref}
-\makeatletter
+\makeatletter % make the "@" character a normal character
 \def\HyPsd@expand@utfvii{}
-\makeatother
+\makeatother % make the "@" character an "other" character
 
-\usepackage{graphicx,url}
-\usepackage{ifthen,eso-pic}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{ifthen}
+\usepackage{eso-pic}
 
 \usepackage[sfdefault]{plex-sans}
 \usepackage{microtype}
 
-\usepackage[utf8]{inputenc}
+%\usepackage[utf8]{inputenc}
 
 %\usepackage{plex-otf} %
 %%\renewcommand*\familydefault{\sfdefault} %% Only if th
