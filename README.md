@@ -10,7 +10,7 @@ Public materials for my Advanced LaTeX Course at the DLR
 * Monday, 07.08.2023
 * Friday, 11.08.2023
 
-Each date will consist of four hours, most likely from 10--12 and from 13-15.
+Each date will consist of four hours, most likely from 10--12 and from 13--15.
 
 ## Necessary Prior Knowledge
 
@@ -90,23 +90,26 @@ From the participants I received the following topics, which I grouped into area
 
 ### Day 2
 
-* Writing letters and creating custom designs 
+* Q & A for Day 1
+* Creating custom designs for letters
 * Conditional typesetting: if/then, looping
 * Writing and maintaining your CV
 * Matplotlib and system fonts
 * LaTeX-Package in Matplotlib: uselatex in Python
-* Floats, Graphics and Tables
 * Embedding Source Code
-* LaTeX and the rest of the world: Python, R, SQL/Python, etc.
+* LaTeX and the rest of the world: Python, R, SQL/Python, etc. I
  
  
 ### Day 3
 
+* Q & A for Day 2
+* LaTeX and the rest of the world: Python, R, SQL/Python, etc. II
+* Floats, Graphics and Tables
 * TikZ
-* Understanding LaTeX - fundamentals for advanced users
+
 
 ### Day 4
 
-
+* Understanding LaTeX - fundamentals for advanced users
 * The "Outer Rim" of LaTeX: What can be done outside the standard?
 * Q & A session
