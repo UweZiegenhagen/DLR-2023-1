@@ -1,0 +1,73 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{sourcesanspro}
+\usepackage{sourcecodepro}
+ 
+\definecolor{colBack}{RGB}{255,255,200}
+\definecolor{colKeys}{rgb}{0,0,1}
+\definecolor{colIdentifier}{rgb}{0,0,0}
+\definecolor{colComments}{rgb}{1,0,0}
+\definecolor{colString}{rgb}{0,0.5,0}
+ 
+\lstset{%
+    float=hbp,%
+    basicstyle=\ttfamily\scriptsize, %
+    identifierstyle=\color{colIdentifier}, %
+    keywordstyle=\color{colKeys}, %
+    stringstyle=\color{colString}, %
+    commentstyle=\color{colComments}, %
+    columns=flexible, %
+    tabsize=2, %
+    frame=single, %
+    extendedchars=true, %
+    showspaces=false, %
+    showstringspaces=false, %
+    numbers=left, %
+    numberstyle=\tiny, %
+    breaklines=true, %
+    backgroundcolor=\color{colBack}, %
+    breakautoindent=true, %
+    captionpos=b%
+}
+ 
+
+\lstset{literate=%
+    {Ö}{{\"O}}1
+    {Ä}{{\"A}}1
+    {Ü}{{\"U}}1
+    {ß}{{\ss}}1
+    {ü}{{\"u}}1
+    {ä}{{\"a}}1
+    {ö}{{\"o}}1
+    {~}{{\textasciitilde}}1
+}
+
+\begin{document}
+
+\begin{lstlisting}[language=Python,morekeywords={read_csv}]
+a = 1234 # öäü
+import pandas as pd
+df = pd.read_csv('Daten.csv')
+\end{lstlisting}
+
+\begin{lstlisting}[language=R]
+Data_Frame <- data.frame (
+  Training = c("Strength", "Stamina", "Other"),
+  Pulse = c(100, 150, 120),
+  Duration = c(60, 30, 45)
+)
+
+Data_Frame[1]
+Data_Frame[["Training"]]
+Data_Frame$Training
+\end{lstlisting}
+
+\lstinputlisting[language=Python]{MPL-00.py}
+
+Hallo ich bin \lstinline[language=Python]{df = pd.read_csv('test.csv')} ein Text
+
+\end{document}
