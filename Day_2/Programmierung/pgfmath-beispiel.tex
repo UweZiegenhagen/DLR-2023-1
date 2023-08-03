@@ -1,0 +1,12 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman,parskip=full]{scrartcl}
+
+\usepackage{pgfmath}
+\begin{document}
+
+\pgfmathparse{2+2}
+
+a \pgfmathresult\ b
+
+\end{document}

@@ -1,0 +1,19 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{ifthen}
+\newcounter{i}
+
+\setcounter{i}{1}
+
+\begin{document}
+
+\whiledo{\value{i} < 100}{
+\arabic{i} Flaschen Saft \\
+\addtocounter{i}{1}
+
+}
+
+
+\end{document}

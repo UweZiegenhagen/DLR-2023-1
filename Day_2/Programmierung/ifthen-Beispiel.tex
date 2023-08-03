@@ -1,0 +1,18 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{ifthen}
+\newboolean{meinevariable}
+\setboolean{meinevariable}{false}
+
+\begin{document}
+
+\ifthenelse{\boolean{meinevariable}}{%
+meinevariable ist true
+}{%
+meinevariable ist false
+}
+
+
+\end{document}

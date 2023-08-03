@@ -1,7 +1,6 @@
 %!TEX TS-program = Arara
 % arara: lualatex: {shell: yes}
-\documentclass[ngerman,parskip=half,11pt,%
-fromalign=right,fromrule=afteraddress]{scrlttr2}
+\documentclass[ngerman,parskip=half,11pt]{scrlttr2}
 
 % fromalign=right, oder center, left ist default
 % fromrule= aftername
@@ -14,10 +13,18 @@ fromalign=right,fromrule=afteraddress]{scrlttr2}
 \setkomavar{yourmail}{02.08.2023}
 \setkomavar{date}{\today}
 
-%\usepackage{palatino}
-%\usepackage{arev}
-%\usepackage{plex} funktioniert nicht, warum?
 \usepackage{plex-otf}
+
+\pagestyle{myheadings}
+
+\setkomavar{firsthead}{\usekomavar{fromname}, \usekomavar{fromaddress}}
+\setkomavar{nexthead}{\thepage/\letterlastpage}
+\setkomavar{firstfoot}{%
+\parbox{0.495\textwidth}{IBAN: DE1234567890 \\ BIC: INGDEFFXX}
+\parbox{0.495\textwidth}{max@mustermann.de \\ www.maxmustermann.de}
+}
+
+\setkomavar{nextfoot}{}
 
 \begin{document}
 \begin{letter}{Dagobert Duck \\ Geldspeicher 1 \\ 12345 Entenhausen}
