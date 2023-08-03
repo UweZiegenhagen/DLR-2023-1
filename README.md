@@ -90,26 +90,34 @@ From the participants I received the following topics, which I grouped into area
 
 ### Day 2
 
-* Q & A for Day 1
-* Creating custom designs for letters
-* Conditional typesetting: if/then, looping
-* Writing and maintaining your CV
-* Matplotlib and system fonts
-* LaTeX-Package in Matplotlib: uselatex in Python
-* Embedding Source Code
-* LaTeX and the rest of the world: Python, R, SQL/Python, etc. I
+* Q & A for Day 1 ✓
+* Creating custom designs for letters ✓
+* Conditional typesetting: if/then, looping ✓
+* Writing and maintaining your CV ✓
+* Matplotlib and system fonts ✓
+* LaTeX-Package in Matplotlib: uselatex in Python ✓
+* Embedding Source Code ✓
+* LaTeX and the rest of the world: Python I
  
  
 ### Day 3
 
+* Matplotlib und siunitx
 * Q & A for Day 2
-* LaTeX and the rest of the world: Python, R, SQL/Python, etc. II
+* LaTeX and the rest of the world: R, SQL/Python, etc. II
 * Floats, Graphics and Tables
-* TikZ
+* TikZ (with standalone)
+* Structuring long documents: \input, \include, \subfile
+* Labeling graphics in LaTeX
+* SVG in LaTeX
+* Was macht \write18, wozu dient shellescape
+
 
 
 ### Day 4
 
+* How to write your own package and class
+* How to use document class variables
 * Understanding LaTeX - fundamentals for advanced users
 * The "Outer Rim" of LaTeX: What can be done outside the standard?
 * Q & A session
