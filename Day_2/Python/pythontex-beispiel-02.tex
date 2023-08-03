@@ -1,3 +1,7 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: pythontex
+% arara: pdflatex: {shell: yes}
 \documentclass[12pt,ngerman]{scrartcl}
 
 \usepackage[autoprint]{pythontex}
@@ -8,10 +12,11 @@
 
 Hallo
 
+
 \py{1+1}
 
 \[
-2^{100}=\py{2**100}
+2^{100}=\py{2**10}
 \]
 
 
