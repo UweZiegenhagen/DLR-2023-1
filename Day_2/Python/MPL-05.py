@@ -5,6 +5,8 @@ Created on Mon Jul 31 20:06:52 2023
 @author: Uwe
 
 https://tex.stackexchange.com/questions/391074/how-to-use-the-siunitx-package-within-python-matplotlib
+
+funktioniert ohne Anpassungen, gibt PGF aus
 """
 
 import matplotlib as mpl

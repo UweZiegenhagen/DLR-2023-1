@@ -3,6 +3,31 @@
 Created on Mon Jul 31 19:36:05 2023
 
 @author: Uwe
+
+Fehler
+
+
+File C:\Python311\Lib\site-packages\matplotlib\backends\backend_pgf.py:358 in
+
+ValueError: Error measuring \rmfamily\fontsize{10.000000}{12.000000}\selectfont \(\displaystyle \mu=100,\ \sigma=15\) \SI{1132156465}{\second\­per\meter}
+LaTeX Output:
+! Undefined control sequence.
+<argument> \second \­
+           per\meter 
+<*> ...gma=15\) \SI{1132156465}{\second\­per\meter}}
+                                                  \typeout{\the\wd0,\the\ht0...
+
+ 867 words of node memory still in use:
+   6 hlist, 2 rule, 2 dir, 4 math, 14 glue, 8 kern, 1 penalty, 31 glyph, 14 att
+ribute, 52 glue_spec, 14 attribute_list, 1 temp, 1 write, 3 pdf_colorstack node
+s
+   avail lists: 2:4,3:10,4:1,5:2,8:10,9:1,11:1
+!  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on texput.log.
+
+
+
+
 """
 
 
@@ -16,12 +41,12 @@ import numpy as np
 
 
 pgf_with_latex = {                      # setup matplotlib to use latex for output
-    "pgf.texsystem": "pdflatex",        # change this if using xetex or lautex
+    "pgf.texsystem": "lualatex",        # change this if using xetex or lautex
     "text.usetex": True,                # use LaTeX to write all text
-    "font.family": "serif",
-    "font.serif": [],                   # blank entries should cause plots 
-    "font.sans-serif": [],              # to inherit fonts from the document
-    "font.monospace": [],
+    #"font.family": "serif",
+    "font.serif": ['LM Roman 10'],                   # blank entries should cause plots 
+    "font.sans-serif": ['LM Roman 10'],              # to inherit fonts from the document
+    "font.monospace": ['LM Roman 10'],
     "axes.labelsize": 10,               # LaTeX default is 10pt font.
     "font.size": 10,
     "legend.fontsize": 8,               # Make the legend/label fonts 
@@ -46,7 +71,7 @@ data['d'] = np.abs(data['d']) * 100
 plt.scatter('a', 'b', c='c', s='d', data=data)
 plt.xlabel('entry a')
 plt.ylabel('entry b')
-plt.text(30, .025, r'$\mu=100,\ \sigma=15$ \SI{1132156465}{\second\­per\meter}')
+plt.text(30, .025, r'$\mu=100,\ \sigma=15 \SI{1132156465}{\second\meter} $')
 plt.text(5, 50, r'$-\frac{p}{2} \pm \sqrt{ \left(\frac{p}{2}\right)^2 -q }$ \LaTeX')
 #plt.savefig("myImagePDF.pdf", format="pdf", bbox_inches="tight")
 plt.savefig('figure.pdf', backend='pgf')
