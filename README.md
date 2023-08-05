@@ -102,8 +102,8 @@ From the participants I received the following topics, which I grouped into area
  
 ### Day 3
 
-* Matplotlib und siunitx
 * Q & A for Day 2
+* Matplotlib und siunitx
 * LaTeX and the rest of the world: R, SQL/Python, etc. II
 * Floats, Graphics and Tables
 * TikZ (with standalone)
