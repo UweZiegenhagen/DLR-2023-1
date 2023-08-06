@@ -1,0 +1,21 @@
+\documentclass[12pt,border=1cm]{standalone}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+ 
+\makeatletter
+\newcommand{\testfileexists}[1]{%
+  \IfFileExists{#1}%
+    {\def\inputtestedfile{\@@input #1 }}
+    {\let\inputtestedfile\@empty}%
+}
+\makeatother
+ 
+\begin{document}
+ 
+\write18{python Datenleser.py}
+ 
+  \testfileexists{aapl}
+      \inputtestedfile
+ 
+ 
+\end{document}
