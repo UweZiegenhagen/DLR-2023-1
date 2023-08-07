@@ -1,10 +1,15 @@
 %!TEX TS-program = Arara
 % arara: pdflatex: {shell: yes}
+% arara: biber
 % arara: pdflatex: {shell: yes}
 \documentclass[12pt,ngerman,parskip=half]{scrbook}
 \input{preamble}
 
+\usepackage[style=authortitle-icomp,backend=biber]{biblatex}
 
+\addbibresource{meineBibliothek.bib}
+
+% \includeonly{chapter-03} % wenn nur einzelne Kapitel neu übersetzt werden sollen
 \begin{document}
 \input{titlepage}
 
@@ -32,6 +37,12 @@
 
 \chapter{fasfas}
 
-
 \blindtext
+
+\cite{Dziarmaga2003}
+
+\printbibliography 
+
+
+
 \end{document}
