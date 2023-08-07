@@ -1,0 +1,17 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% Polarkoordinaten
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{tikz}
+
+\begin{document}
+
+\begin{tikzpicture}
+\draw[step=1cm, blue, thin](0,0) grid (15,10);
+
+\draw[red,thick] (5,5) -- ++(45:1) -- ++(25:2); 
+
+\end{tikzpicture}
+
+\end{document}
