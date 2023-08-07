@@ -1,0 +1,14 @@
+\documentclass{article}
+\usepackage{tikz}
+
+\begin{document}
+\begin{tikzpicture}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\includegraphics[width=0.9\textwidth]{Katze1.jpg}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \node [white, font=\bfseries] at (0.25,0.75) {$P(X|Y)$};
+        \node [red, font=\bfseries] at (0.2,0.25) {$P(X|Y)$};
+    \end{scope}
+\end{tikzpicture}
+\end{document}
+
+https://tex.stackexchange.com/questions/126521/how-can-one-put-labels-over-an-image
