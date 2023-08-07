@@ -33,16 +33,24 @@
 
 \include{chapter-04}
 
-\backmatter
 
-\chapter{fasfas}
+
+\begin{refsection}
+\chapter{Fazit und Ausblick}
 
 \blindtext
 
-\cite{Dziarmaga2003}
+Neben \footcite{Knuth1980},  \cite{Duesentrieb:2023} zeigen \citeauthor{Dziarmaga2003} in ihrem im Jahr \citeyear{Dziarmaga2003} erschienenen Paper \citetitle{Dziarmaga2003}
 
-\printbibliography 
+\printbibliography[title={Genutzte Literatur}]
+\end{refsection}
 
+
+\printbibliography[title={Bücher},type=book]
+
+\printbibliography[title={Artikel},type=article]
+
+\printbibliography[title={Nicht publiziert},type=unpublished]
 
 
 \end{document}
