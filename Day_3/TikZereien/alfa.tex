@@ -1,0 +1,40 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+
+\usepackage{amsmath}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows, calc}
+\usepackage{pgfplots}
+\pgfplotsset{
+	/pgfplots/colormap={hsv2}{rgb255(0cm)=(0,0,0) rgb255(1cm)=(128,0,128) rgb255(2cm)=(0,0,230)
+		rgb255(3cm)=(0,255,255) rgb255(4cm)=(0,255,0) rgb255(5cm)=(255,255,0) rgb255(6cm)=(255,0,0)}
+}
+\usepackage{pgfplotstable}
+\usepackage{subcaption}
+\usepackage[export]{adjustbox}
+\usepackage{cite}
+\usepackage{todo}
+\usepackage{multirow}
+\usepackage{wrapfig}
+
+\usepackage{color}
+
+\begin{document}
+		\begin{tikzpicture}
+		
+		
+		\begin{axis}[width=0.8\textwidth,  ymin=0, ymax=0.04, xmin=50, xmax=75, ylabel style={yshift=-0.2cm},
+			ylabel={$M_{\textrm{0}}$ in Nm}, xlabel={1/Ripple in 1/Nm},
+			view={0}{90}, colorbar sampled, point meta min=2, point meta max=26, 
+			colorbar style={title= $\alpha_\textrm{skew}$, at={(1.1,0)},anchor=south east},
+			legend style = {at={(0.7,1)},
+				font=\fontsize{8}{8}\selectfont}
+			]
+			
+			\addplot3[scatter, only marks, mark size=1.5pt, mark=*, scatter/use mapped color={draw = black,fill=mapped color}] table[x index=0,y index=1,z index=2] {alphaskew.dat};
+		\end{axis}
+		%
+	\end{tikzpicture}
+\end{document}
