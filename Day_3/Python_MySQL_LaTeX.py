@@ -17,7 +17,7 @@ from sqlalchemy import create_engine
 mydb = mysql.connector.connect(
   host="sql608.your-server.de",
   user="uwezie_2_r",
-  password="jyAMvs5H6nD7yZ1X",
+  password="",
   database="northwind"
 )
 
@@ -30,7 +30,7 @@ for x in myresult:
 """
 
 # sqlalchemy example
-db_connection_str = 'mysql+mysqlconnector://uwezie_2_r:jyAMvs5H6nD7yZ1X@sql608.your-server.de/northwind'
+db_connection_str = 'mysql+mysqlconnector://uwezie_2_r:@sql608.your-server.de/northwind'
 db_connection = create_engine(db_connection_str)
 
 # pandas reads a dataframe from SQL
