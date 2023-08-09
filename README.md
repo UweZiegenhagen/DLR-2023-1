@@ -35,30 +35,35 @@ From the participants I received the following topics, which I grouped into area
 
 ### Programming LaTeX
 
-* Designing my own layout (for beamer or other documents) What tools do I need to have?
-* What do certain commands mean, like for instance "\makeatletter"?
-* Writing loops (like "if ... then ...")
-* In general writing more involved environments. Here I know only the basics like \renewcommand or \DeclareMathOperator.
-* Writing your own class and packages, and where should I save my own .cls or .sty files so that they are centrally available for all .tex files on my computer? 
+* Designing my own layout (for beamer or other documents) What tools do I need to have? ✓
+* What do certain commands mean, like for instance "\makeatletter"? ✓
+* Writing loops (like "if ... then ...") ✓
+* In general writing more involved environments. Here I know only the basics like 
+  \renewcommand or \DeclareMathOperator.
+* Writing your own class and packages, and where should I save my own .cls or .sty files 
+  so that they are centrally available for all .tex files on my computer?
 
 ### Taming LaTeX
 
-* Maybe a more basic question is: How to get rid of "overful \hbox"?
-* Is it actually possible to have absolutely no "underfull/overfull hbox" warnings? 
+* Maybe a more basic question is: How to get rid of "overful \hbox"? ✓
+* Is it actually possible to have absolutely no "underfull/overfull hbox" warnings? ✓
 * Forcing element (e.g. figure or footnote) positioning to be on specified page
-* Using git-latexdiff (instead of latexdiff [options] old.tex new.tex > diff.tex and having to manually download old.tex)
-* Strategy when managing a large project: what makes a 'good' LaTeX project? What are the dos-and-dont's (e.g. preamble in separate file, \input and \include, etc.) ?
-* Formatting footnotes to be positioned inside the running text at the bottom of the page (i.e. not below text but wrapped within text),
+* Using git-latexdiff (instead of latexdiff [options] old.tex new.tex > diff.tex and 
+  having to manually download old.tex)
+* Strategy when managing a large project: what makes a 'good' LaTeX project? 
+  What are the dos-and-dont's (e.g. preamble in separate file, \input and \include, etc.) ?
+* Formatting footnotes to be positioned inside the running text at the bottom 
+  of the page (i.e. not below text but wrapped within text),
 * Space between header numbering and header text
-* Change between single column and multiple column style (e.g. abstract in single column, remaining content in twocolumn style)
+* Change between single column and multiple column style (e.g. abstract in 
+  single column, remaining content in twocolumn style)
 * Custom abstract (abstract header, indentation, size, etc.) 
 * How does LaTeX know stuff?
 * Graphics in LaTeX
 
 ### Document Types
 
-* Create posters for conferences
-* Creating presentations, where is the advantage if compared to PowerPoint?
+* Creating presentations, where is the advantage if compared to PowerPoint? ✓
 
 
 ### Bibliographies
@@ -80,7 +85,8 @@ From the participants I received the following topics, which I grouped into area
 
 * Introduce ourselves ✓
 * Curriculum of this course ✓
-* Feedback culture: Please provide feedback, you can interrupt me after each sentence. ✓
+* Feedback culture: Please provide feedback, you can interrupt 
+  me after each sentence. ✓
 * Leichter TeXen mit Arara and Autohotkey ✓
 * Presentations with LaTeX - Introduction ✓
 * Overfull hboxes ✓ (UZ to check this) ✓
@@ -97,27 +103,35 @@ From the participants I received the following topics, which I grouped into area
 * Matplotlib and system fonts ✓
 * LaTeX-Package in Matplotlib: uselatex in Python ✓
 * Embedding Source Code ✓
-* LaTeX and the rest of the world: Python I
+* LaTeX and the rest of the world: Python I ✓
  
  
 ### Day 3
 
 * Q & A for Day 2 ✓
-* Matplotlib und siunitx
-* LaTeX and the rest of the world: R, SQL/Python, etc. II
-* Floats, Graphics and Tables
-* TikZ (with standalone)
-* Structuring long documents: \input, \include, \subfile
-* Labeling graphics in LaTeX
-* SVG in LaTeX
-* Was macht \write18, wozu dient shellescape
-
+* Structuring long documents: \input, \include und das subfiles Paket ✓
+* Why you should use biblatex ✓
+  https://tex.stackexchange.com/questions/87414/per-chapter-bibliographies-in-biblatex
+* SVG in LaTeX ✓
+* Fun with \write18 ✓
+* LaTeX and the rest of the world: R, SQL/Python, etc. II ✓
+* TikZ (with standalone) ✓
+* Labeling existing graphics in LaTeX ✓
+* Matplotlib und siunitx 
 
 
 ### Day 4
 
+* Floats, Graphics and Tables
+* Create posters for conferences
+* Grafiken nur kompilieren, falls nicht verändert
+* subfiles Example
+* prettyref und andere Pakete
+* citetitle und hyperlinks https://tex.stackexchange.com/questions/108344/biblatexhyperref-citetitle-citeauthor-and-get-hyperlink
 * How to write your own package and class
 * How to use document class variables
-* Understanding LaTeX - fundamentals for advanced users
 * The "Outer Rim" of LaTeX: What can be done outside the standard?
 * Q & A session
+
+
+

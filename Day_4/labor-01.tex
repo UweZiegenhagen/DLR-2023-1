@@ -1,0 +1,15 @@
+%!TEX TS-program = Arara
+% arara: lualatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage{pstricks}
+\usepackage{pst-labo}
+
+\begin{document}
+
+\psframebox{\pstChauffageTube[becBunsen,barbotage]}
+
+
+\pstChauffageBallon[tubeRecourbeCourt]
+
+\end{document}

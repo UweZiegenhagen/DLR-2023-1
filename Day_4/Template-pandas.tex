@@ -1,0 +1,14 @@
+\documentclass[12pt,ngerman]{scrartcl}
+
+\newcommand{\VAR}[1]{#1}
+\newcommand{\BLOCK}[1]{#1}
+
+\begin{document}
+
+\begin{tabular}{lll}
+	\BLOCK{ for _,row in data.iterrows()}
+    \VAR{row['Anrede'] } & \VAR{row['Name'] } &\VAR{row['Straße'] } \\
+	\BLOCK{ endfor }
+\end{tabular}
+
+\end{document}
