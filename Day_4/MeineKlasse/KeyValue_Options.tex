@@ -1,0 +1,48 @@
+\begin{filecontents}[overwrite,noheader]{uweziegenhagen.cls}
+% rollback part: n/a
+% identification part
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{uweziegenhagen}[2023/07/30 Meine eigene Klasse]
+
+% preliminary declarations part / initial code part:
+\newcommand\@ptsize{}
+
+\setlength\paperheight{297mm}%
+\setlength\paperwidth{210mm}
+\setlength{\pdfpageheight}{297mm}
+\setlength{\pdfpagewidth}{210mm}	
+
+\DeclareOption{a5paper}{%
+	\setlength{\paperheight}{210mm}
+	\setlength{\paperwidth}{148.5mm}
+	\setlength{\pdfpageheight}{210mm}
+	\setlength{\pdfpagewidth}{148.5mm}	
+}
+
+\renewcommand\@ptsize{0}
+\DeclareOption{10pt}{\renewcommand\@ptsize{0}}
+\DeclareOption{11pt}{\renewcommand\@ptsize{1}}
+\DeclareOption{12pt}{\renewcommand\@ptsize{2}}
+
+\ExecuteOptions{10pt}
+\ProcessOptions
+\input{size1\@ptsize.clo}
+
+
+% handle options part, newer key-value syntax: n/a
+% package loading: n/a
+% main code part: 
+
+\newcommand{\hello}{Hello World!}
+ 
+\end{filecontents}
+
+\documentclass[a5paper,10pt]{uweziegenhagen}
+
+\begin{document}
+
+Hallo \hello
+
+
+
+\end{document}

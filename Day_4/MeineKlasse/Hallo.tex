@@ -1,24 +1,35 @@
 \begin{filecontents}[overwrite,noheader]{uweziegenhagen.cls}
+% rollback part: n/a
+% identification part
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{uweziegenhagen}[2023/07/30 Meine eigene Klasse]
 
-\renewcommand\normalsize{%
+% preliminary declarations part / initial code part: n/a
+% handle options part  old style
+\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
+\ProcessOptions\relax   
+
+% handle options part, newer key-value syntax: n/a
+
+% package loading
+% main code part
+
+\renewcommand\normalsize{% aus article.cls
    \@setfontsize\normalsize{10.5pt}{12pt}
    \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
    \abovedisplayshortskip \z@ \@plus3\p@
    \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
    \belowdisplayskip \abovedisplayskip
    \let\@listi\@listI}\normalsize 
-   
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
-\ProcessOptions\relax   
+
 
 \newcommand{\hello}{Hallo Welt}
+
 
    
 \end{filecontents}
 
-\documentclass[10pt]{uweziegenhagen}
+\documentclass{uweziegenhagen}
 
 
 
