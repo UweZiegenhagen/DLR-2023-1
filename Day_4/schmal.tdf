@@ -1,0 +1,6 @@
+\unitlength=1mm
+\hoffset=-13mm
+\voffset=-15mm
+\ticketNumbers{1}{10}
+\ticketSize{185}{32} % Breite und Höhe der Labels in mm
+\ticketDistance{0}{0} % Abstand der Labels

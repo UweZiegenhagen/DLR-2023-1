@@ -1,0 +1,48 @@
+\documentclass[a4paper,12pt]{scrartcl}
+\usepackage[total={210mm,297mm},top=0mm,left=0mm,bottom=0mm,includefoot]{geometry}
+\usepackage[schmal]{ticket}
+\usepackage{graphicx}
+\usepackage{filecontents}
+ 
+\IfFileExists{plex-sans.sty}{%
+\usepackage[sfdefault]{plex-sans}%
+}{
+\usepackage{palatino}%
+}
+ 
+\begin{filecontents*}{schmal.tdf}
+\unitlength=1mm
+\hoffset=-13mm
+\voffset=-15mm
+\ticketNumbers{1}{8}
+\ticketSize{185}{32} % Breite und Höhe der Labels in mm
+\ticketDistance{0}{0} % Abstand der Labels
+\end{filecontents*}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{xcolor}
+ 
+\renewcommand{\ticketdefault}{}%
+\makeatletter
+\@boxedtrue % Rahmen um Ticket
+\@emptycrossmarkfalse % Falzmarken
+\@cutmarktrue % Schnittmarken
+\makeatother
+ 
+\newcommand{\mylabel}[2]{
+\ticket{%
+\put(5,6){\scalebox{#1}{\bfseries #2}}
+}}
+ 
+\begin{document}
+\mylabel{6}{Versicherung}
+\mylabel{6}{Versicherung}
+\mylabel{6}{Versicherung}
+\mylabel{6}{Versicherung}
+\mylabel{6}{Versicherung}
+\mylabel{6}{Versicherung}
+\mylabel{6}{Versicherung}
+\mylabel{6}{Versicherung}
+\end{document}

@@ -1,0 +1,43 @@
+\documentclass[a4paper,12pt]{scrartcl}
+\usepackage[total={210mm,297mm},top=0mm,left=0mm,bottom=0mm,includefoot,landscape]{geometry}
+\usepackage[Ordner]{ticket}
+\usepackage{graphicx}
+\usepackage{filecontents}
+ 
+\IfFileExists{plex-sans.sty}{%
+\usepackage[sfdefault]{plex-sans}%
+}{
+\usepackage{palatino}%
+}
+ 
+\begin{filecontents*}{Ordner.tdf}
+\unitlength=1mm
+\hoffset=10mm
+\voffset=-15mm
+\ticketNumbers{1}{3}
+\ticketSize{190}{58} % Breite und Höhe der Labels in mm
+\ticketDistance{0}{0} % Abstand der Labels
+\end{filecontents*}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{xcolor}
+ 
+\renewcommand{\ticketdefault}{}%
+\makeatletter
+\@boxedtrue % Rahmen um Ticket
+\@emptycrossmarkfalse % Falzmarken
+\@cutmarktrue % Schnittmarken
+\makeatother
+ 
+\newcommand{\mylabel}[1]{
+\ticket{%
+\put(15,15){\scalebox{7}{\bfseries #1}}
+}}
+ 
+\begin{document}
+\mylabel{Ausbildung}
+\mylabel{Steuern}
+\mylabel{Rente}
+\end{document}

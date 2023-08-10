@@ -1,0 +1,22 @@
+% see https://tex.stackexchange.com/questions/25249/how-do-i-use-a-particular-font-for-a-small-section-of-text-in-my-document
+
+\documentclass[12pt,ngerman,parkskip=half]{scrartcl}
+
+\usepackage[]{babel}
+\usepackage[]{blindtext}
+\newcommand*{\myfont}[1]{\fontfamily{#1}\selectfont }
+
+\setkomafont{sectioning}{\myfont{uncl}}
+
+\begin{document}
+
+\section{Einleitung}
+
+\blindtext
+
+
+
+
+
+\end{document}
+

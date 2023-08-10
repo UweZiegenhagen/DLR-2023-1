@@ -1,0 +1,53 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+\documentclass[12pt,ngerman]{scrartcl}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{paralist}
+\usepackage{xcolor}
+\usepackage[]{mdframed}
+\usepackage[]{blindtext}
+
+\newmdtheoremenv [%
+outerlinewidth = 2,%
+roundcorner = 10pt ,%
+leftmargin = 40,%
+rightmargin = 40,%
+backgroundcolor = yellow!40 ,%
+outerlinecolor = blue!70!black ,%
+innertopmargin = \topskip ,%
+splittopskip = \topskip ,%
+ntheorem = true,%
+] {theorem}{Theorem} [section]
+
+
+\begin{document}
+
+\section{Einleitung}
+
+
+
+\begin{theorem} [Pythagorean Theorem]
+
+\(a^2+b^2=c^2\)
+
+\end{theorem}
+
+\section{Einleitung}
+
+
+
+\begin{theorem} [Pythagorean Theorem]
+\blindtext
+
+\[a^2+b^2=c^2\]
+
+\end{theorem}
+
+
+\end{document}

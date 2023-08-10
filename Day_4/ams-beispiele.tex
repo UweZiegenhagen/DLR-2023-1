@@ -1,0 +1,146 @@
+\documentclass[12pt,ngerman]{scrreprt}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{csquotes}
+\usepackage{paralist}
+\usepackage{xcolor}
+\usepackage{amsmath}
+
+%\newcounter{formel}
+
+\newcommand{\foobar}{\refstepcounter{equation}\theequation}
+
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{corollary}{Corollary}[chapter]
+\newtheorem{lemma}{Lemma}[chapter]
+
+\begin{document}
+
+\chapter{aaa}
+\section{fsdfs}
+
+\begin{equation*}
+a=b
+\end{equation*}
+
+\begin{equation}\label{xx} % Split von überlangen Formeln
+\begin{split}
+a& =b+c-d\\
+& \quad +e-f\\
+& =g+h\\
+& =i
+\end{split}
+\end{equation}
+
+\begin{multline}
+\framebox[.65\columnwidth]{A}\\
+\framebox[.5\columnwidth]{B}\\
+\shoveright{\framebox[.55\columnwidth]{C}}\\
+\framebox[.65\columnwidth]{D}
+\end{multline}
+
+
+\begin{equation}\label{e:barwq}\begin{split}
+H_c&=\frac{1}{2n} \sum^n_{l=0}(-1)^{l}(n-{l})^{p-2}
+\sum_{l _1+\dots+ l _p=l}\prod^p_{i=1} \binom{n_i}{l _i}\\
+&\quad\cdot[(n-l )-(n_i-l _i)]^{n_i-l _i}\cdot
+\Bigl[(n-l )^2-\sum^p_{j=1}(n_i-l _i)^2\Bigr].
+\end{split}\end{equation}
+
+%pmatrix, bmatrix, Bmatrix, vmatrix and Vmatrix 
+\begin{equation}
+\begin{pmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{pmatrix}
+\end{equation}
+
+\begin{equation}
+\begin{bmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+\begin{Bmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{Bmatrix}
+\end{equation}
+
+\begin{equation}
+\begin{vmatrix}
+1 & 2 & 3\\
+a & b & c
+\end{vmatrix}
+\end{equation}
+
+\begin{equation}
+\begin{Vmatrix}
+1 & -2 & 3\\
+a & b & -c
+\end{Vmatrix}
+\end{equation}
+
+\( A \cap B  \cup C \Rightarrow \overline{A \cap B  \cup C} \in \Omega \)
+
+
+\[f(x) = \begin{cases}
+5 & x \geq 0 \\
+23 & \, \text{sonst}
+\end{cases}\]
+
+
+
+\[ \overbrace{a^2 + b^2}^\text{Satz \foobar} = \underbrace{c^2 + d^2}_{\text{Beweis \foobar}} \]
+
+
+\begin{theorem}
+Let \(f\) be a function whose derivative exists in every point, then \(f\) 
+is a continuous function.
+\end{theorem}
+
+
+\begin{theorem}
+Let \(f\) be a function whose derivative exists in every point, then \(f\) is 
+a continuous function.
+\end{theorem}
+
+\begin{theorem}[Pythagorean theorem]
+\label{pythagorean}
+This is a theorem about right triangles and can be summarised in the next 
+equation 
+\[ x^2 + y^2 = z^2 \]
+\end{theorem}
+
+And a consequence of theorem \ref{pythagorean} is the statement in the next 
+corollary.
+
+\section{dsfdsgdfgdfg}
+
+\begin{corollary}
+There's no right rectangle whose sides measure 3cm, 4cm, and 6cm.
+\end{corollary}
+
+You can reference theorems such as \ref{pythagorean} when a label is assigned.
+
+\begin{lemma}
+Given two line segments whose lengths are \(a\) and \(b\) respectively there is a 
+real number \(r\) such that \(b=ra\).
+\end{lemma}
+
+\begin{theorem}
+Let \(f\) be a function whose derivative exists in every point, then \(f\) is 
+a continuous function.
+\end{theorem}
+
+\( a \geq b \leq c \not= d + |V| \)
+
+
+\end{document}
+
