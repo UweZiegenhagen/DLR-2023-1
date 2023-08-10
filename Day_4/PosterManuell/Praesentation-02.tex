@@ -1,0 +1,134 @@
+\documentclass[12pt,ngerman]{beamer}
+
+\usepackage{blindtext}
+\usepackage{graphicx}
+
+\usepackage{xcolor}
+\definecolor{chamois}{RGB}{255,255,240}
+\definecolor{darkbrown}{RGB}{124,79,0}
+
+\author{Uwe Ziegenhagen}
+\title{Meine erste Präsentation}
+\subtitle{Untertitel}
+\institute{Köln}
+
+% Navigation unterdrücken
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamercolor{background canvas}{bg=chamois}
+\setbeamercolor{itemize item}{fg=brown}
+\setbeamercolor{itemize subitem}{fg=brown}
+\setbeamertemplate{itemize item}{\textbullet}
+\setbeamertemplate{itemize subitem}{\textsterling}
+
+\setbeamercolor{frametitle}{fg=darkbrown}
+\setbeamercolor{structure}{fg=darkbrown}
+\setbeamercolor{title}{fg=brown}
+\setbeamercolor{author}{fg=darkbrown}
+
+%\befehl[optional1,optional2=fsdf]{Pflichtparameter1}{Pflichtparameter2}{Pflichtparameter3}{}{}
+% \includegraphics[width=0.5\textwidth]{Katze.jpg}
+
+\begin{document}
+
+\begin{frame}
+\transboxout
+
+\maketitle
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Inhalt}
+
+\tableofcontents
+
+\end{frame}
+
+\section{Einleitung}
+
+
+\begin{frame}
+\transdissolve
+\frametitle{Warum Beamer cool ist!}
+
+\textcolor{red}{Ich bin roter Text}
+
+\begin{equation}
+a^2+b^2=c^2
+\end{equation}
+
+\pause
+
+\begin{equation}
+-\frac{p}{2} \pm \sqrt{ \left(\frac{p}{2}\right)^2 -q }
+\end{equation}
+
+\end{frame}
+
+\subsection{Aufzählungen}
+
+\begin{frame}
+\frametitle{Aufzählungen}
+
+\begin{itemize}
+\item Hallo
+\item ich 
+\item bin
+\item eine
+
+\begin{itemize}
+	\item a
+	\item b
+	\item c
+\end{itemize}
+
+\item längere
+\item Aufzählung
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mehrere Spalten}
+
+\begin{columns}
+\begin{column}{0.33\textwidth}
+\includegraphics[width=\textwidth]{Katze}
+\end{column}
+\begin{column}{0.33\textwidth}
+\scriptsize\blindtext
+\end{column}
+\begin{column}{0.33\textwidth}
+\scriptsize\blindtext
+\end{column}
+\end{columns}
+
+\end{frame}
+
+\section{Mehrere Spalten}
+
+\begin{frame}
+\frametitle{Mehrere Spalten}
+
+\begin{columns}
+\begin{column}{0.66\textwidth}
+\includegraphics[width=\textwidth]{Katze}
+\end{column}
+\begin{column}{0.33\textwidth}
+\begin{itemize}
+	\item 
+	\item 
+	\item 
+	\item 
+	\item 
+	\item 
+\end{itemize}
+
+
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\end{document}
