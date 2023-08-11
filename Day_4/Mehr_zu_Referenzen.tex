@@ -1,13 +1,17 @@
 \documentclass[ngerman]{scrartcl}
-\usepackage[latin1]{inputenc}
+
 \usepackage[T1]{fontenc}
 \usepackage{babel}
 \usepackage{xcolor}
 \usepackage{paralist}
- 
+\usepackage{todonotes}
 % sinnloser Text 
 \usepackage{blindtext}
+\usepackage[left]{lineno}
 
+\usepackage[right=6cm]{geometry}
+
+\linenumbers
 
 % for prettyref
 \usepackage{prettyref} 
@@ -46,21 +50,27 @@
 %\crefname{figure}{Zeichnung}{Zeichnungen}
 % siehe auch https://tex.stackexchange.com/questions/79954/creating-a-new-type-of-cross-reference-and-referencing-them-spelling-the-same-te
 
+\setlength{\marginparwidth}{4cm}
 
 \begin{document}
+
+\listoftodos
 
 \label{aaa}
 
 \section{Erster Abschnitt}\label{sec:erst}
  
-\blindtext[3]
+\blindtext[1] \todo{Katzenklo säubern}
+ 
+ 
+\blindtext[1] 
  
 \begin{figure}[h]%
 \rule{\columnwidth}{5cm}
 \caption{Hallo Welt!}%
-\label{fig:test1}%
+\label{fig:test1}%\todo{Make a cake \ldots},%
 \end{figure}
- 
+\clearpage
  
 \begin{table}[h]%
 \rule{\columnwidth}{5cm}
@@ -69,7 +79,7 @@
 \end{table}
  
  
-\blindtext[1]
+\blindtext[1]\marginpar{Hallo, ich bin ein kurzer Text}
  
 \section{Zweiter Abschnitt}
  
@@ -97,7 +107,7 @@
 	\item Cleverref: \crefrange{fig:test1}{fig:test4}
 	\item Cleverref: \crefrange*{fig:test1}{fig:test2} % no hyperlink
 	\item Cleverref: \cpagerefrange{fig:test1}{fig:test4} 
-	\item Cleverref: \cref{dra:zeichnung1}\vspace*{1em}
+	\item Cleverref: \cref{dra:zeichnung1}\vspace*{1em} \todo[inline]{DRA definieren}
 	\item Prettyref: \prettyref{fig:test1}
 	\item Prettyref: \prettyref{sec:erst}
 	
