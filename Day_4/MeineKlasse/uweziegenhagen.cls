@@ -20,4 +20,3 @@ val=0
 \setlength\textheight{8cm}
 
 \renewcommand\normalsize{\fontsize{10}{12}\selectfont}
-

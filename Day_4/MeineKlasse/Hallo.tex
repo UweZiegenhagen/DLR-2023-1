@@ -5,6 +5,8 @@
 \ProvidesClass{uweziegenhagen}[2023/07/30 Meine eigene Klasse]
 
 % preliminary declarations part / initial code part: n/a
+
+\LoadClass{article}
 % handle options part  old style
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 \ProcessOptions\relax   
@@ -14,29 +16,22 @@
 % package loading
 % main code part
 
-\renewcommand\normalsize{% aus article.cls
-   \@setfontsize\normalsize{10.5pt}{12pt}
-   \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
-   \abovedisplayshortskip \z@ \@plus3\p@
-   \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
-   \belowdisplayskip \abovedisplayskip
-   \let\@listi\@listI}\normalsize 
+\RequirePackage{xspace}
 
-
-\newcommand{\hello}{Hallo Welt}
-
-
-   
+\newcommand{\hello}{Hallo Welt\xspace}
+ 
 \end{filecontents}
 
 \documentclass{uweziegenhagen}
 
-
-
 \begin{document}
 
-Hallo \hello
+Hallo \hello. 
 
+Hallo \hello ich bin ein Text
 
+Hallo \LaTeX ich bin ein Text
+
+\section{ffsdfs}
 
 \end{document}

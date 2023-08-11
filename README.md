@@ -41,7 +41,7 @@ From the participants I received the following topics, which I grouped into area
 * In general writing more involved environments. Here I know only the basics like 
   \renewcommand or \DeclareMathOperator.
 * Writing your own class and packages, and where should I save my own .cls or .sty files 
-  so that they are centrally available for all .tex files on my computer?
+  so that they are centrally available for all .tex files on my computer? ✓
 
 ### Taming LaTeX
 
@@ -50,16 +50,16 @@ From the participants I received the following topics, which I grouped into area
 * Forcing element (e.g. figure or footnote) positioning to be on specified page
 * Using git-latexdiff (instead of latexdiff [options] old.tex new.tex > diff.tex and 
   having to manually download old.tex)
-* Strategy when managing a large project: what makes a 'good' LaTeX project? 
+* Strategy when managing a large project: what makes a 'good' LaTeX project? ✓
   What are the dos-and-dont's (e.g. preamble in separate file, \input and \include, etc.) ?
 * Formatting footnotes to be positioned inside the running text at the bottom 
   of the page (i.e. not below text but wrapped within text),
 * Space between header numbering and header text
 * Change between single column and multiple column style (e.g. abstract in 
-  single column, remaining content in twocolumn style)
+  single column, remaining content in twocolumn style) ✓
 * Custom abstract (abstract header, indentation, size, etc.) 
 * How does LaTeX know stuff?
-* Graphics in LaTeX
+* Graphics in LaTeX ✓
 
 ### Document Types
 
@@ -68,14 +68,14 @@ From the participants I received the following topics, which I grouped into area
 
 ### Bibliographies
 
-* Custom reference and bibliography styles
-* bib styles for entries that aren’t yet published
-* More on Bibliographies, e.g. in combination with EndNote
+* Custom reference and bibliography styles ✓
+* bib styles for entries that aren’t yet published ✓
+* More on Bibliographies, e.g. in combination with EndNote ✓
 
 ### Interactions 
 
-* I am using R for analyses, how can I combine R and LaTeX?
-* SQL and LaTeX
+* I am using R for analyses, how can I combine R and LaTeX? ✓
+* SQL and LaTeX ✓
 
 
 
@@ -117,21 +117,24 @@ From the participants I received the following topics, which I grouped into area
 * LaTeX and the rest of the world: R, SQL/Python, etc. II ✓
 * TikZ (with standalone) ✓
 * Labeling existing graphics in LaTeX ✓
-* Matplotlib und siunitx 
+* Matplotlib und siunitx ✓
 
 
 ### Day 4
 
-* Floats, Graphics and Tables
-* Create posters for conferences
-* Grafiken nur kompilieren, falls nicht verändert
-* subfiles Example
-* prettyref und andere Pakete
-* citetitle und hyperlinks https://tex.stackexchange.com/questions/108344/biblatexhyperref-citetitle-citeauthor-and-get-hyperlink
-* How to write your own package and class
-* How to use document class variables
+* subfiles Example ✓
+* Grafiken nur kompilieren, falls nicht verändert ✓
+* Floats, Graphics and Tables (placeins Paket) ✓
+* Create posters for conferences (with TikzPoster, modernposter and A0poster) ✓
+* prettyref und andere Pakete ✓
+* citetitle, citeauthor und hyperlinks ✓
+* How to write your own package and class and how to use options 
 * The "Outer Rim" of LaTeX: What can be done outside the standard?
 * Q & A session
 
 
 
+### TODO für Uwe
+
+* PDF/X Beispiel vorbereiten
+* 
