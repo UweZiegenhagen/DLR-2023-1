@@ -5,10 +5,33 @@
 \documentclass[12pt,ngerman,parskip=half]{scrbook}
 
 \input{preamble}
+\usepackage[left]{lineno}
+\linenumbers
 
 \usepackage[style=authortitle-icomp,backend=biber]{biblatex}
-
 \addbibresource{meineBibliothek.bib}
+
+\DeclareCiteCommand{\citetitle}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}%
+   \usebibmacro{prenote}}
+  {\ifciteindex
+     {\indexfield{indextitle}}
+     {}%
+   \printtext[bibhyperref]{\printfield[citetitle]{labeltitle}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
+
+\DeclareCiteCommand{\citeauthor}
+  {\boolfalse{citetracker}%
+   \boolfalse{pagetracker}%
+   \usebibmacro{prenote}}
+  {\ifciteindex
+     {\indexnames{labelname}}
+     {}%
+   \printtext[bibhyperref]{\printnames{labelname}}}
+  {\multicitedelim}
+  {\usebibmacro{postnote}}
 
 % \includeonly{chapter-03} % wenn nur einzelne Kapitel neu übersetzt werden sollen
 \begin{document}

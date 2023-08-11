@@ -8,6 +8,20 @@
 \usepackage{blindtext}
 \usepackage{microtype}
 
+\usepackage[headsepline=0.5pt,footsepline=0.5pt]{scrlayer-scrpage}
+\usepackage[left=2cm,right=4cm]{geometry}
+\KOMAoptions{headwidth=1.1\textwidth,footwidth=1.1\textwidth}
+\usepackage{blindtext}
+ 
+\pagestyle{scrheadings}
+ 
+\ohead[ohead]{\headmark}
+\ofoot[\pagemark]{\pagemark}
+\ifoot[ifoot]{ifoot} % inner foot
+\ihead[ihead]{ihead} % inner head
+\cfoot[ihead]{cfoot} % center foot
+\chead[chead]{chead} % center head
+
 
 \usepackage{hyperref}
 \hypersetup{
