@@ -1,0 +1,39 @@
+%https://tex.stackexchange.com/questions/329709/how-to-put-figure-at-middle-or-at-desired-position-on-a-page
+\documentclass{IEEEtran}
+\usepackage{graphicx}
+\usepackage{afterpage}
+\usepackage{multicol}
+\usepackage{lipsum}
+
+\newsavebox{\shortpagebox}
+\newsavebox{\shortpagefigure}
+
+\makeatletter
+\newcommand{\shortpage}[2]% #1 = text, #2 = figure*
+{\par
+\setbox\shortpagebox=\vbox{\strut #1\par}% cram text together
+\global\setbox\shortpagefigure=\vbox{\hsize=\textwidth
+\def\@captype{figure}%
+#2}% store figure
+\afterpage{\twocolumn[%
+\begin{multicols}{2}
+\unvbox\AP@partial
+\end{multicols}\par
+\vskip\intextsep
+\box\shortpagefigure
+\vskip\dbltextfloatsep]}
+\unvbox\shortpagebox
+\par}
+\makeatother
+
+\begin{document}
+\lipsum[1-10]\strut
+%\hrule% locate start of short page
+
+\shortpage{\lipsum[11-12]}%
+{\centering
+\includegraphics{example-image}
+\caption{test}}
+\lipsum[12-16]
+
+\end{document}

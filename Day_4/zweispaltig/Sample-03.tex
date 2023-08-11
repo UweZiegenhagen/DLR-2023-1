@@ -1,0 +1,36 @@
+%https://tex.stackexchange.com/questions/329709/how-to-put-figure-at-middle-or-at-desired-position-on-a-page
+\documentclass{IEEEtran}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\newlength{\tempheight}
+\begin{document}
+\lipsum[1]
+
+\begin{figure}[h]
+\sbox0{% get height
+\begin{minipage}{\textwidth}
+\centering
+\includegraphics{example-image}
+\caption{test}
+\end{minipage}}%
+\global\tempheight=\dimexpr \ht0+\dp0+2\intextsep+2cm\relax
+\rlap{\usebox0}
+\end{figure}
+
+\lipsum[2-3]
+
+Quisque ullamcorper placerat ipsum. Cras nibh. Morbi vel
+justo vitae lacus tincidunt ultrices. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. In hac habitasse platea dictumst.
+Integer tempus convallis augue. Etiam facilisis. Nunc elementum
+fermentum wisi. Aenean placerat. Ut imperdiet, enim sed
+gravida sollicitudin, felis odio placerat quam, ac pulvinar elit
+purus eget enim. 
+\vspace{\tempheight}% ***** insert blank space here *****
+Nunc vitae tortor.  Proin tempus nibh sit amet
+nisl. Vivamus quis tortor vitae risus porta vehicula.
+
+\lipsum[5-6]
+
+\end{document}
