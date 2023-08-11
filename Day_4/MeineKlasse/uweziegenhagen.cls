@@ -1,17 +1,23 @@
-\NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{uweziegenhagen}[2023/07/30 Meine eigene Klasse]
+\NeedsTeXFormat{LaTeX2e}[2022-06-01]
+\ProvidesClass{uweziegenhagen}[2023-08-11]
 
-\renewcommand\normalsize{%
-   \@setfontsize\normalsize{10.5pt}{12pt}
-   \abovedisplayskip 10\p@ \@plus2\p@ \@minus5\p@
-   \abovedisplayshortskip \z@ \@plus3\p@
-   \belowdisplayshortskip 6\p@ \@plus3\p@ \@minus3\p@
-   \belowdisplayskip \abovedisplayskip
-   \let\@listi\@listI}\normalsize
+\RequirePackage{xcolor}
 
-\DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
-\ProcessOptions\relax
+\DeclareKeys{
+color.code = \colorlet{foocol}{#1},
+val.store = \fooval
+}
 
-\newcommand{\hello}{Hallo Welt}
 
+\SetKeys{
+color =black,
+val=0
+}
+
+\ProcessKeyOptions
+
+\setlength\textwidth{6cm}
+\setlength\textheight{8cm}
+
+\renewcommand\normalsize{\fontsize{10}{12}\selectfont}
 

@@ -1,47 +1,37 @@
+% https://tex.stackexchange.com/questions/647997/how-to-use-equals-sign-in-custom-class-options
 \begin{filecontents}[overwrite,noheader]{uweziegenhagen.cls}
-% rollback part: n/a
-% identification part
-\NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{uweziegenhagen}[2023/07/30 Meine eigene Klasse]
+\NeedsTeXFormat{LaTeX2e}[2022-06-01]
+\ProvidesClass{uweziegenhagen}[2023-08-11]
 
-% preliminary declarations part / initial code part:
-\newcommand\@ptsize{}
+\RequirePackage{xcolor}
 
-\setlength\paperheight{297mm}%
-\setlength\paperwidth{210mm}
-\setlength{\pdfpageheight}{297mm}
-\setlength{\pdfpagewidth}{210mm}	
-
-\DeclareOption{a5paper}{%
-	\setlength{\paperheight}{210mm}
-	\setlength{\paperwidth}{148.5mm}
-	\setlength{\pdfpageheight}{210mm}
-	\setlength{\pdfpagewidth}{148.5mm}	
+\DeclareKeys{
+color.code = \colorlet{foocol}{#1},
+val.store = \fooval
 }
 
-\renewcommand\@ptsize{0}
-\DeclareOption{10pt}{\renewcommand\@ptsize{0}}
-\DeclareOption{11pt}{\renewcommand\@ptsize{1}}
-\DeclareOption{12pt}{\renewcommand\@ptsize{2}}
 
-\ExecuteOptions{10pt}
-\ProcessOptions
-\input{size1\@ptsize.clo}
+\SetKeys{
+color =black,
+val=0
+}
 
+\ProcessKeyOptions
 
-% handle options part, newer key-value syntax: n/a
-% package loading: n/a
-% main code part: 
+\setlength\textwidth{6cm}
+\setlength\textheight{8cm}
 
-\newcommand{\hello}{Hello World!}
+\renewcommand\normalsize{\fontsize{10}{12}\selectfont}
  
 \end{filecontents}
 
-\documentclass[a5paper,10pt]{uweziegenhagen}
+\documentclass[color=red,val=42]{uweziegenhagen}
 
 \begin{document}
 
-Hallo \hello
+\textcolor{foocol}{one}  $x=\fooval$
+
+\end{document}
 
 
 

@@ -34,9 +34,9 @@ def get_file_modification_times(folder_path):
                 
                 time_difference = int(pdf_modification_time - tex_modification_time)
                 print(f"{file}\t\t{time_difference} seconds")
-                if time_difference > 60: # 3 hours
+                if time_difference < 60: # 60 Sekunden
                     print(f'must recompile {file}')
-                    #os.system(f"pdflatex {file}")
+                    os.system(f"pdflatex {file}")
                 else:
                     print(f'{time_difference} too small/big to recompile')
 
