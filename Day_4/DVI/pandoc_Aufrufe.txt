@@ -1,0 +1,14 @@
+# LaTeX nach HTML, Formeln als Bild
+
+pandoc -s test-01.tex -s --webtex -o webtex.html
+
+# LaTeX nach HTML, Formeln als mathjax
+
+pandoc -s test-01.tex -s --mathjax -o mathjax.html
+
+# LaTeX nach epub, Formeln als Bild
+
+pandoc -s test-01.tex -s --webtex -o webtex.epub
+
+
+Siehe auch https://pandoc.org/demos.html
