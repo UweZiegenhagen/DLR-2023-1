@@ -128,13 +128,13 @@ From the participants I received the following topics, which I grouped into area
 * Create posters for conferences (with TikzPoster, modernposter and A0poster) ✓
 * prettyref und andere Pakete ✓
 * citetitle, citeauthor und hyperlinks ✓
-* How to write your own package and class and how to use options 
-* The "Outer Rim" of LaTeX: What can be done outside the standard?
-* Q & A session
+* How to write your own package and class and how to use options ✓
+* The "Outer Rim" of LaTeX: What can be done outside the standard? ✓
+* Q & A session ✓
 
 
 
-### TODO für Uwe
+### After the Course
 
-* PDF/X Beispiel vorbereiten
-* 
+* PDF/X Examples (Day_4/pdfx_Beispiel) ✓
+* pandoc Examples (Day_4/DVI) ✓

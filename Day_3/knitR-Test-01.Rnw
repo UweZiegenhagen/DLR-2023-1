@@ -1,0 +1,15 @@
+\documentclass{article}
+
+\begin{document}
+
+Hallo Welt!
+
+<<>>=
+v=1+1+1
+@
+
+
+Das Ergebnis meiner Berechnungen war \Sexpr{v}
+
+
+\end{document}
